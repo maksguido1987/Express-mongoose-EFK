@@ -1,9 +1,9 @@
-import * as dotenv from 'dotenv';
+const dotenv = require('dotenv');
 dotenv.config({ path: "./.env" });
-import express from 'express';
-import mongoose from 'mongoose';
-import router from './routes/router.js';
-import fileUpload from 'express-fileupload';
+const express = require('express');
+const mongoose = require('mongoose');
+const router = require('./routes/router.js');
+const fileUpload = require('express-fileupload');
 
 const PORT = process.env.PORT || 3000;
 const DB_URL = `mongodb+srv://maks:1q2w3e4r@cluster0.kltx5.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`;

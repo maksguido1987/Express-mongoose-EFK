@@ -1,5 +1,5 @@
-import Card from '../model/Card.js';
-import fileServise from './FileServise.js';
+const Card =  require('../model/Card.js');
+const fileServise =  require('./FileServise.js');
 
 class CardServise {
   async createWithFiles(card, image) {
@@ -45,4 +45,4 @@ class CardServise {
   }
 }
 
-export default new CardServise();
+module.exports = new CardServise();

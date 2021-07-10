@@ -1,4 +1,4 @@
-import mongoose from "mongoose";
+const mongoose = require('mongoose');
 
 const Card = new mongoose.Schema({
   word: {
@@ -21,4 +21,4 @@ const Card = new mongoose.Schema({
   },
 })
 
-export default mongoose.model('Card', Card);
+module.exports = mongoose.model('Card', Card);

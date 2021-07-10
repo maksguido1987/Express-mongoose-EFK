@@ -1,5 +1,5 @@
-import * as uuid from 'uuid';
-import * as path from 'path';
+const uuid =  require('uuid');
+const path =  require('path');
 
 class FileServise {
   saveFile(file) {
@@ -14,4 +14,4 @@ class FileServise {
   }
 }
 
-export default new FileServise();
+module.exports = new FileServise();

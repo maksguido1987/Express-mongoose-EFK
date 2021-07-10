@@ -1,4 +1,4 @@
-import CardServise from './CardServise.js';
+const CardServise =- require('./CardServise.js');
 
 class CardController {
   async createWithFiles(req, res) {
@@ -56,4 +56,4 @@ class CardController {
   }
 }
 
-export default new CardController();
+module.exports = new CardController();
