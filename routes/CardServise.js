@@ -1,14 +1,14 @@
-const Card =  require('../model/Card.js');
-const fileServise =  require('./FileServise.js');
+const Card =  require('../models/Card.js');
+const FileServise =  require('./FileServise.js');
 
 class CardServise {
   async createWithFiles(card, image) {
-    const fileName = fileServise.saveFile(image);
+    const fileName = FileServise.saveFile(image);
     const createdCard = await Card.create({...card, image: fileName});
     return createdCard;
   }
 
-  async create(card) {
+  async createWords(card) {
     const createdCard = await Card.create(card);
     return createdCard;
   }

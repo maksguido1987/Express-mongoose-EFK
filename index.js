@@ -1,9 +1,10 @@
 const dotenv = require('dotenv');
-dotenv.config({ path: "./.env" });
 const express = require('express');
 const mongoose = require('mongoose');
 const router = require('./routes/router.js');
 const fileUpload = require('express-fileupload');
+const path = require('path');
+dotenv.config({ path: './.env' });
 
 const PORT = process.env.PORT || 3000;
 const DB_URL = `mongodb+srv://maks:1q2w3e4r@cluster0.kltx5.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`;

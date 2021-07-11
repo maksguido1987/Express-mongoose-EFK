@@ -11,9 +11,11 @@ const Card = new mongoose.Schema({
   },
   image: {
     type: String,
+    default: '',
   },
   srcAudio: {
     type: String,
+    default: '',
   },
   _deletedAt: {
     type: Date,

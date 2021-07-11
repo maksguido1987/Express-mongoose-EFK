@@ -1,13 +1,12 @@
 const Router = require('express');
-const { model } = require('mongoose');
-const PostController = require('./CardController.js');
+const CardController = require('./CardController.js');
 
 const router = new Router();
 
-router.post('/cards', PostController.create);
-router.get('/cards', PostController.getAll);
-router.get('/cards/:id', PostController.getOne);
-router.put('/cards/:id', PostController.update);
-router.delete('/cards/:id', PostController.delete);
+router.post('/cards', CardController.createWithFiles);
+router.get('/cards', CardController.getAll);
+router.get('/cards/:id', CardController.getOne);
+router.put('/cards/:id', CardController.update);
+router.delete('/cards/:id', CardController.delete);
 
 module.exports = router;

@@ -1,4 +1,4 @@
-const CardServise =- require('./CardServise.js');
+const CardServise = require('./CardServise.js');
 
 class CardController {
   async createWithFiles(req, res) {
@@ -10,7 +10,7 @@ class CardController {
     }
   }
 
-  async create(req, res) {
+  async createWords(req, res) {
     try {
       const card = await CardServise.create(req.body);
       res.json(card);
