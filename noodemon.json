@@ -1,0 +1,12 @@
+{
+  "verbose": false,
+  "ignore": ["node_modules"],
+  "watch": ["Express-mongoose-EFK"],
+  "exec": "nodemon index.js",
+  "ext": "js",
+  "events": {
+    "restart": "kill-port 3000",
+    "crach": "likk-port 3000"
+  },
+  "delay": "1500"
+}

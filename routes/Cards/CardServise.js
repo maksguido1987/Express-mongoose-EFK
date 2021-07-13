@@ -1,4 +1,4 @@
-const Card =  require('../models/Card.js');
+const Card =  require('../../models/Card.js');
 const FileServise =  require('./FileServise.js');
 
 class CardServise {
