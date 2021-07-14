@@ -6,7 +6,7 @@
   "ext": "js",
   "events": {
     "restart": "kill-port 3000",
-    "crach": "likk-port 3000"
+    "crach": "kill-port 3000"
   },
   "delay": "1500"
 }
